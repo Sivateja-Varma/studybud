@@ -1,0 +1,27 @@
+{%extends 'main.html'%}
+
+
+
+{%block content%}
+
+<style>
+  .pro-cont{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+</style>
+
+<div class="pro-cont">
+  <div>
+    {% include 'base/topic.html'%}
+  </div>
+  <div>
+    {%include 'base/feed_component.html'%}
+  </div>
+  <div>
+    {%include 'base/activity_feed.html'%}
+  </div>
+</div>
+
+
+{%endblock%}
