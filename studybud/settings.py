@@ -74,7 +74,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'studybud.wsgi.application'
-CSRF_TRUSTED_ORIGINS = ['https://web-production-6585a.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-6585a.up.railway.app',
+                        'http://web-production-6585a.up.railway.app'
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
