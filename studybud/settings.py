@@ -86,7 +86,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': '/app/persistent/db.sqlite3',
     }
 }
 
@@ -128,7 +128,7 @@ MEDIA_URL='/images/'
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[BASE_DIR/'static',]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-MEDIA_ROOT=BASE_DIR/'static/images'
+MEDIA_ROOT='/app/persistent/media'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
